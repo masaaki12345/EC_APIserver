@@ -15,5 +15,5 @@ app.listen(3000,console.log("サーバー起動"));
 
 const products = require('./data.json');
 app.get("/api/products",(req,res) => {
-    res.send(products);
+    res.json(products);
 });
